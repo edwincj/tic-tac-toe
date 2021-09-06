@@ -1,9 +1,7 @@
 .row{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    row-gap: 5px;
-    column-gap: 5px;
-    padding-top: 4px;
+    gap: 5px;
 }
 
 .column{
@@ -14,4 +12,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.row:not(:last-child){
+    margin-bottom: 5px;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.empty{
+    cursor: not-allowed;
 }

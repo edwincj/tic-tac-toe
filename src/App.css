@@ -1,12 +1,24 @@
-@import './CSS/Row.css';
-@import './CSS/PlayGround.css';
+@import "./CSS/Row.css";
+@import "./CSS/PlayGround.css";
 
-body{
+body {
   background-color: #121212;
   color: aliceblue;
 }
 
-div{
+div {
   align-content: center;
   justify-content: center;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+*{
+  padding: 0;
+  margin: 0;
 }
