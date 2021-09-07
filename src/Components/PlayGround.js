@@ -19,29 +19,29 @@ const PlayGround = () => {
     });
     setGamestate(newState);
   };
-
-  const checkEachRow = () => {
-    let flg = false;
-    gameState.forEach((row) => {
-      if (row.every((c) => c === "X")) {
-        flg = true;
-        return false;
-      }
-    });
-    return flg;
-  };
-
+  
   useEffect(() => {
-    let flg = false;
+    let rowFlg = false;
+    let diagFlg = true;
+
     gameState.forEach((row) => {
       if (row.every((c) => c === "X")) {
-        flg = true;
+        rowFlg = true;
         return false;
       }
     });
+
+    for (let i = 0; i < 3; i++) {
+      if (gameState[i][i] !== "X") {
+        diagFlg = false;
+        break;
+      }
+    }
+
     if (
       gameState.every((x) => x[0] === "X" || x[1] === "X" || x[2] === "X") ||
-      flg
+      rowFlg ||
+      diagFlg
     ) {
       console.log("X");
     }
