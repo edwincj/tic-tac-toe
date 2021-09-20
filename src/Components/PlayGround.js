@@ -86,9 +86,17 @@ const PlayGround = ({ newGame }) => {
         })}
       </div>
       <div className="footer">
-        <div className={player === "X" && "current"}>X</div>
+        <div
+          className={player === "X" && result === "Active" ? "current" : "wait"}
+        >
+          X
+        </div>
         <div>{result === "Active" && restart}</div>
-        <div className={player === "O" && "current"}>O</div>
+        <div
+          className={player === "O" && result === "Active" ? "current" : "wait"}
+        >
+          O
+        </div>
       </div>
     </div>
   );

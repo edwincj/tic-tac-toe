@@ -12,6 +12,23 @@ div {
   justify-content: center;
 }
 
+button {
+  font-size: 20px;
+  background-color: hsl(349, 52%, 61%);
+  outline: none;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+  color: white;
+  opacity: 2;
+}
+
+button:hover{
+  background-color: hsl(349, 52%, 30%);
+}
+
 #root {
   height: 100vh;
   display: flex;
@@ -19,7 +36,7 @@ div {
   justify-content: center;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
 }
