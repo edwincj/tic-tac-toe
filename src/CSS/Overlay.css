@@ -1,7 +1,7 @@
 .overlay{
     background-color: #12121299;
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
     position: absolute;
     display: flex;
     align-items: center;
